@@ -6,11 +6,23 @@
 //
 
 import SwiftUI
+import SwiftUIText
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        NavigationView {
+            List {
+                Section {
+                    NavigationLink(destination: SwiftUIText()) {
+                        Text("SwiftUIText")
+                    }
+                } header: {
+                    Text("Basic")
+                }
+            }
+            .navigationTitle("SwiftUI")
+        }
     }
 }
 

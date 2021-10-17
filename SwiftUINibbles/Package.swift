@@ -11,6 +11,9 @@ let package = Package(
         .library(
             name: "SwiftUINibbles",
             targets: ["SwiftUINibbles"]),
+        .library(
+            name: "SwiftUIText",
+            targets: ["SwiftUIText"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,5 +28,8 @@ let package = Package(
         .testTarget(
             name: "SwiftUINibblesTests",
             dependencies: ["SwiftUINibbles"]),
+        .target(
+            name: "SwiftUIText",
+            dependencies: []),
     ]
 )
