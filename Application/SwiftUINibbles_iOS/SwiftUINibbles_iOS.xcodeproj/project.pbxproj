@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60AC3CE271F9AA100CD86E7 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = B60AC3CD271F9AA100CD86E7 /* DesignSystem */; };
 		B615BE5F271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */; };
 		B615BE61271B313B00A28CCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE60271B313B00A28CCD /* ContentView.swift */; };
 		B615BE63271B313C00A28CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615BE62271B313C00A28CCD /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60AC3CE271F9AA100CD86E7 /* DesignSystem in Frameworks */,
 				B69E2336271B3587000B2592 /* SwiftUINibbles in Frameworks */,
 				B6287F93271C907B0068DF79 /* SwiftUIText in Frameworks */,
 			);
@@ -108,6 +110,7 @@
 			packageProductDependencies = (
 				B69E2335271B3587000B2592 /* SwiftUINibbles */,
 				B6287F92271C907B0068DF79 /* SwiftUIText */,
+				B60AC3CD271F9AA100CD86E7 /* DesignSystem */,
 			);
 			productName = SwiftUINibbles_iOS;
 			productReference = B615BE5B271B313B00A28CCD /* SwiftUINibbles_iOS.app */;
@@ -371,6 +374,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B60AC3CD271F9AA100CD86E7 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
 		B6287F92271C907B0068DF79 /* SwiftUIText */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIText;

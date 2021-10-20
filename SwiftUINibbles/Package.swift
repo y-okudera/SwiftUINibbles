@@ -14,6 +14,9 @@ let package = Package(
         .library(
             name: "SwiftUIText",
             targets: ["SwiftUIText"]),
+        .library(
+            name: "DesignSystem",
+            targets: ["DesignSystem"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -30,6 +33,9 @@ let package = Package(
             dependencies: ["SwiftUINibbles"]),
         .target(
             name: "SwiftUIText",
+            dependencies: []),
+        .target(
+            name: "DesignSystem",
             dependencies: []),
     ]
 )
