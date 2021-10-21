@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NeumorphicView.swift
 //  SwiftUINibbles_iOS
 //
 //  Created by Yuki Okudera on 2021/10/17.
@@ -8,7 +8,7 @@
 import SwiftUI
 import DesignSystem
 
-struct ContentView: View {
+struct NeumorphicView: View {
     @State private var isOnLightToggle = false
     @State private var isOnDarkToggle = false
 
@@ -46,10 +46,10 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NeumorphicView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-            ContentView().preferredColorScheme($0)
+            NeumorphicView().preferredColorScheme($0)
         }
     }
 }

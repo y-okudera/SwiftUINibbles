@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		B60AC3CE271F9AA100CD86E7 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = B60AC3CD271F9AA100CD86E7 /* DesignSystem */; };
 		B615BE5F271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */; };
-		B615BE61271B313B00A28CCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE60271B313B00A28CCD /* ContentView.swift */; };
+		B615BE61271B313B00A28CCD /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE60271B313B00A28CCD /* NeumorphicView.swift */; };
 		B615BE63271B313C00A28CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615BE62271B313C00A28CCD /* Assets.xcassets */; };
 		B615BE66271B313C00A28CCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615BE65271B313C00A28CCD /* Preview Assets.xcassets */; };
 		B6287F93271C907B0068DF79 /* SwiftUIText in Frameworks */ = {isa = PBXBuildFile; productRef = B6287F92271C907B0068DF79 /* SwiftUIText */; };
 		B69E2336271B3587000B2592 /* SwiftUINibbles in Frameworks */ = {isa = PBXBuildFile; productRef = B69E2335271B3587000B2592 /* SwiftUINibbles */; };
+		B6E3221B2721A86300C211A0 /* LayoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3221A2721A86300C211A0 /* LayoutListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B615BE5B271B313B00A28CCD /* SwiftUINibbles_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINibbles_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINibbles_iOSApp.swift; sourceTree = "<group>"; };
-		B615BE60271B313B00A28CCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B615BE60271B313B00A28CCD /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		B615BE62271B313C00A28CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B615BE65271B313C00A28CCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B69E2333271B34DD000B2592 /* SwiftUINibbles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUINibbles; path = ../../SwiftUINibbles; sourceTree = "<group>"; };
+		B6E3221A2721A86300C211A0 /* LayoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,8 @@
 		B615BE5D271B313B00A28CCD /* SwiftUINibbles_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */,
-				B615BE60271B313B00A28CCD /* ContentView.swift */,
-				B615BE62271B313C00A28CCD /* Assets.xcassets */,
-				B615BE64271B313C00A28CCD /* Preview Content */,
+				B6E322182721A65F00C211A0 /* Application */,
+				B6E322192721A84300C211A0 /* View */,
 			);
 			path = SwiftUINibbles_iOS;
 			sourceTree = "<group>";
@@ -89,6 +89,41 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E322182721A65F00C211A0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B615BE62271B313C00A28CCD /* Assets.xcassets */,
+				B615BE64271B313C00A28CCD /* Preview Content */,
+				B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6E322192721A84300C211A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3221D2721AAA700C211A0 /* LayoutListView */,
+				B6E3221C2721AA9A00C211A0 /* NeumorphicView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6E3221C2721AA9A00C211A0 /* NeumorphicView */ = {
+			isa = PBXGroup;
+			children = (
+				B615BE60271B313B00A28CCD /* NeumorphicView.swift */,
+			);
+			path = NeumorphicView;
+			sourceTree = "<group>";
+		};
+		B6E3221D2721AAA700C211A0 /* LayoutListView */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3221A2721A86300C211A0 /* LayoutListView.swift */,
+			);
+			path = LayoutListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B615BE61271B313B00A28CCD /* ContentView.swift in Sources */,
+				B615BE61271B313B00A28CCD /* NeumorphicView.swift in Sources */,
+				B6E3221B2721A86300C211A0 /* LayoutListView.swift in Sources */,
 				B615BE5F271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUINibbles_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUINibbles_iOS/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = B8PR34D6DP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -327,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUINibbles_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUINibbles_iOS/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = B8PR34D6DP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

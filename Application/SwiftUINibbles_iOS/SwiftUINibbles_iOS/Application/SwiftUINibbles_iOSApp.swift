@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUINibbles_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LayoutListView()
         }
     }
 }
