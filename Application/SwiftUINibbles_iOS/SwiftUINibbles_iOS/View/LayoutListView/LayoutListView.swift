@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Model
 
 struct LayoutListView: View {
     var body: some View {
@@ -14,6 +15,9 @@ struct LayoutListView: View {
                 Section {
                     NavigationLink(destination: NeumorphicView()) {
                         Text("NeumorphicView")
+                    }
+                    NavigationLink(destination: CardMenuView(firstLineCards: Card.firstLineCardsMock(), secondLineCards: Card.secondLineCardsMock())) {
+                        Text("CardMenuView")
                     }
                 } header: {
                     Text("Basic")
