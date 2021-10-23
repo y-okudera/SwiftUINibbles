@@ -10,7 +10,7 @@ import XCTest
 
 final class CardTests: XCTestCase {
     func testInit() throws {
-        let card = Card(id: "0", icon: UIImage(systemName: "pencil")!, title: "Pencil", minCount: 2, maxCount: 16)
+        let card = Card(id: "0", icon: UIImage(systemName: "pencil")!, title: "Pencil", minCount: 2, maxCount: 10)
         XCTAssertEqual(card.id, "0")
         XCTAssertEqual(card.icon, UIImage(systemName: "pencil"))
         XCTAssertEqual(card.title, "Pencil")
