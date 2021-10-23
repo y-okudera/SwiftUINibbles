@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import View
 
 @main
 struct SwiftUINibbles_iOSApp: App {

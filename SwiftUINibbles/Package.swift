@@ -14,6 +14,9 @@ let package = Package(
         .library(
             name: "Model",
             targets: ["Model"]),
+        .library(
+            name: "View",
+            targets: ["View"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,5 +34,8 @@ let package = Package(
         .testTarget(
             name: "ModelTests",
             dependencies: ["Model"]),
+        .target(
+            name: "View",
+            dependencies: ["DesignSystem"]),
     ]
 )

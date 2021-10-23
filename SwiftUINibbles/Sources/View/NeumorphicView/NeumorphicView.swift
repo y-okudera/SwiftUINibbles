@@ -1,8 +1,8 @@
 //
 //  NeumorphicView.swift
-//  SwiftUINibbles_iOS
+//  
 //
-//  Created by Yuki Okudera on 2021/10/17.
+//  Created by Yuki Okudera on 2021/10/23.
 //
 
 import SwiftUI
@@ -15,8 +15,9 @@ struct NeumorphicView: View {
     var body: some View {
         ZStack {
             LinearGradient(Color.token.gradientStartDefault, Color.token.gradientEndDefault)
-            HStack(spacing: 32.0) {
+            VStack(spacing: 32.0) {
 
+                Text("Button")
                 Button(action: {
                     print("Button tapped")
                 }) {
@@ -30,6 +31,7 @@ struct NeumorphicView: View {
                     )
                 )
 
+                Text("Toggle")
                 Toggle(isOn: $isOnLightToggle) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.white)

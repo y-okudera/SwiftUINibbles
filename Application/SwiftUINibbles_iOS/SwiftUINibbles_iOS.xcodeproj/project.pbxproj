@@ -7,25 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60AC3CE271F9AA100CD86E7 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = B60AC3CD271F9AA100CD86E7 /* DesignSystem */; };
+		B60F8FB22723F0B000AC5A6B /* View in Frameworks */ = {isa = PBXBuildFile; productRef = B60F8FB12723F0B000AC5A6B /* View */; };
 		B615BE5F271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */; };
-		B615BE61271B313B00A28CCD /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615BE60271B313B00A28CCD /* NeumorphicView.swift */; };
 		B615BE63271B313C00A28CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615BE62271B313C00A28CCD /* Assets.xcassets */; };
 		B615BE66271B313C00A28CCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615BE65271B313C00A28CCD /* Preview Assets.xcassets */; };
-		B6E3221B2721A86300C211A0 /* LayoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3221A2721A86300C211A0 /* LayoutListView.swift */; };
-		B6E322202721ACD300C211A0 /* CardMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3221F2721ACD300C211A0 /* CardMenuView.swift */; };
-		B6E322282722EB0000C211A0 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = B6E322272722EB0000C211A0 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B615BE5B271B313B00A28CCD /* SwiftUINibbles_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINibbles_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B615BE5E271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINibbles_iOSApp.swift; sourceTree = "<group>"; };
-		B615BE60271B313B00A28CCD /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		B615BE62271B313C00A28CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B615BE65271B313C00A28CCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B69E2333271B34DD000B2592 /* SwiftUINibbles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUINibbles; path = ../../SwiftUINibbles; sourceTree = "<group>"; };
-		B6E3221A2721A86300C211A0 /* LayoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutListView.swift; sourceTree = "<group>"; };
-		B6E3221F2721ACD300C211A0 /* CardMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,8 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60AC3CE271F9AA100CD86E7 /* DesignSystem in Frameworks */,
-				B6E322282722EB0000C211A0 /* Model in Frameworks */,
+				B60F8FB22723F0B000AC5A6B /* View in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				B6E322182721A65F00C211A0 /* Application */,
-				B6E322192721A84300C211A0 /* View */,
 			);
 			path = SwiftUINibbles_iOS;
 			sourceTree = "<group>";
@@ -101,40 +92,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		B6E322192721A84300C211A0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B6E3221E2721ACC600C211A0 /* CardMenuView */,
-				B6E3221D2721AAA700C211A0 /* LayoutListView */,
-				B6E3221C2721AA9A00C211A0 /* NeumorphicView */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B6E3221C2721AA9A00C211A0 /* NeumorphicView */ = {
-			isa = PBXGroup;
-			children = (
-				B615BE60271B313B00A28CCD /* NeumorphicView.swift */,
-			);
-			path = NeumorphicView;
-			sourceTree = "<group>";
-		};
-		B6E3221D2721AAA700C211A0 /* LayoutListView */ = {
-			isa = PBXGroup;
-			children = (
-				B6E3221A2721A86300C211A0 /* LayoutListView.swift */,
-			);
-			path = LayoutListView;
-			sourceTree = "<group>";
-		};
-		B6E3221E2721ACC600C211A0 /* CardMenuView */ = {
-			isa = PBXGroup;
-			children = (
-				B6E3221F2721ACD300C211A0 /* CardMenuView.swift */,
-			);
-			path = CardMenuView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,8 +109,7 @@
 			);
 			name = SwiftUINibbles_iOS;
 			packageProductDependencies = (
-				B60AC3CD271F9AA100CD86E7 /* DesignSystem */,
-				B6E322272722EB0000C211A0 /* Model */,
+				B60F8FB12723F0B000AC5A6B /* View */,
 			);
 			productName = SwiftUINibbles_iOS;
 			productReference = B615BE5B271B313B00A28CCD /* SwiftUINibbles_iOS.app */;
@@ -209,10 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B615BE61271B313B00A28CCD /* NeumorphicView.swift in Sources */,
-				B6E3221B2721A86300C211A0 /* LayoutListView.swift in Sources */,
 				B615BE5F271B313B00A28CCD /* SwiftUINibbles_iOSApp.swift in Sources */,
-				B6E322202721ACD300C211A0 /* CardMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,13 +372,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B60AC3CD271F9AA100CD86E7 /* DesignSystem */ = {
+		B60F8FB12723F0B000AC5A6B /* View */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DesignSystem;
-		};
-		B6E322272722EB0000C211A0 /* Model */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Model;
+			productName = View;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

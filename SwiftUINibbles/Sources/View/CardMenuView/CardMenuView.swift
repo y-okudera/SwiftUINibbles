@@ -1,8 +1,8 @@
 //
 //  CardMenuView.swift
-//  SwiftUINibbles_iOS
+//  
 //
-//  Created by Yuki Okudera on 2021/10/21.
+//  Created by Yuki Okudera on 2021/10/23.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ import Model
 struct CardMenuView: View {
     let firstLineCards: [Card]
     let secondLineCards: [Card]
-    
+
     var body: some View {
         ZStack {
             Color.token.cardBackground
@@ -20,16 +20,23 @@ struct CardMenuView: View {
                 VStack(spacing: 24) {
                     HStack {
                         ForEach(firstLineCards, id: \.id) { card in
-                            Button(action: { print("tapped card id: \(card.id) title: \(card.title)") },
-                                   label: { CardView(card: card) })
-                                .buttonStyle(CardButtonStyle())
+                            Button(action: {
+                                print("tapped card id: \(card.id) title: \(card.title)")
+                            }) {
+                                CardView(card: card)
+                            }
+                            .buttonStyle(CardButtonStyle())
+
                         }
                     }
                     HStack {
                         ForEach(secondLineCards, id: \.id) { card in
-                            Button(action: { print("tapped card id: \(card.id) title: \(card.title)") },
-                                   label: { CardView(card: card) })
-                                .buttonStyle(CardButtonStyle())
+                            Button(action: {
+                                print("tapped card id: \(card.id) title: \(card.title)")
+                            }) {
+                                CardView(card: card)
+                            }
+                            .buttonStyle(CardButtonStyle())
                         }
                     }
                 }
@@ -44,10 +51,7 @@ struct CardMenuView: View {
 struct CardMenuView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-            CardMenuView(
-                firstLineCards: Card.firstLineCardsMock(),
-                secondLineCards: Card.secondLineCardsMock()
-            )
+            CardMenuView(firstLineCards: Card.firstLineCardsMock(), secondLineCards: Card.secondLineCardsMock())
                 .preferredColorScheme($0)
         }
     }
