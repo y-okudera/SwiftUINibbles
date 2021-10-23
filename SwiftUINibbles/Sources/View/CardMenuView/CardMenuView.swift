@@ -51,7 +51,7 @@ struct CardMenuView: View {
 struct CardMenuView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-            CardMenuView(firstLineCards: Card.firstLineCardsMock(), secondLineCards: Card.secondLineCardsMock())
+            CardMenuView(firstLineCards: .firstLineCardsMock(), secondLineCards: .secondLineCardsMock())
                 .preferredColorScheme($0)
         }
     }

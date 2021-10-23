@@ -36,7 +36,9 @@ extension Card {
     public static func mock() -> Card {
         Card(id: "0", icon: UIImage(systemName: "pencil")!, title: "Pencil", minCount: 2, maxCount: 16)
     }
+}
 
+extension Array where Element == Card {
     public static func firstLineCardsMock() -> [Card] {
         [
             Card(id: "0", icon: UIImage(systemName: "pencil")!, title: "Pencil", minCount: 2, maxCount: 16),

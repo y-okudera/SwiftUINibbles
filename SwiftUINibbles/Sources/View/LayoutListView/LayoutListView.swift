@@ -23,7 +23,7 @@ public struct LayoutListView: View {
                         Text("NeumorphicView")
                     }
                     NavigationLink(
-                        destination: CardMenuView(firstLineCards: Card.firstLineCardsMock(), secondLineCards: Card.secondLineCardsMock())
+                        destination: CardMenuView(firstLineCards: .firstLineCardsMock(), secondLineCards: .secondLineCardsMock())
                     ) {
                         Text("CardMenuView")
                     }
