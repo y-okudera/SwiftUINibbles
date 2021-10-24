@@ -24,7 +24,7 @@ public struct CardView: View {
         ZStack {
             Color.token.cardBackground
             VStack(spacing: 32) {
-                Image(uiImage: card.icon)
+                Image(systemName: card.systemImageName)
                     .resizable()
                     .renderingMode(.template)
                     .scaledToFill()
