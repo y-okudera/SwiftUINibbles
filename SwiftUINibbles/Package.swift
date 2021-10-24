@@ -21,6 +21,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/onevcat/Kingfisher", from: "6.3.1"),
+        .package(url: "https://github.com/CSolanaM/SkeletonUI", from: "1.0.5"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,6 +31,8 @@ let package = Package(
             name: "DesignSystem",
             dependencies: [
                 "Model",
+                .product(name: "Kingfisher", package: "Kingfisher"),
+                .product(name: "SkeletonUI", package: "SkeletonUI"),
             ],
             resources: [
                 .process("Resources")
@@ -36,12 +40,18 @@ let package = Package(
         ),
         .target(
             name: "Model",
-            dependencies: []),
+            dependencies: [],
+            resources: [
+                .process("Resources")
+            ]
+        ),
         .testTarget(
             name: "ModelTests",
-            dependencies: ["Model"]),
+            dependencies: ["Model"]
+        ),
         .target(
             name: "View",
-            dependencies: ["DesignSystem"]),
+            dependencies: ["DesignSystem"]
+        ),
     ]
 )

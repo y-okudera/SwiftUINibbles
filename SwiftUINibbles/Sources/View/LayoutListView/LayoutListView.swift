@@ -27,6 +27,11 @@ public struct LayoutListView: View {
                     ) {
                         Text("CardMenuView")
                     }
+                    NavigationLink(
+                        destination: PokeCardGridView(pokeCards: PokeCards.mockPreview.cards)
+                    ) {
+                        Text("PokeCardGridView")
+                    }
                 } header: {
                     Text("Basic")
                         .navigationTitle("SwiftUI")
