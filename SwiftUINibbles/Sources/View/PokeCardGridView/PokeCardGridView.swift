@@ -30,34 +30,24 @@ public struct PokeCardGridView: View {
         ScrollView(.vertical) {
 
             // Header
-            Rectangle()
-                .foregroundColor(.red)
-                .frame(height: 132)
-                .padding(.horizontal)
+            PokeCardBannerView()
 
-            switch style {
-            case .normalGrid:
-                LazyVGrid(columns: items, spacing: 10, pinnedViews: [.sectionHeaders]) {
-                    Section(header: stickyHeader) {
-                        ForEach(pokeCards, id: \.id) { pokeCard in
+            LazyVGrid(columns: items, spacing: 10, pinnedViews: [.sectionHeaders]) {
+                Section(header: stickyHeader) {
+                    ForEach(pokeCards, id: \.id) { pokeCard in
+                        switch style {
+                        case .normalGrid:
                             PokeCardGridItemView(pokeCard: pokeCard)
-                        }
-                        .padding(.horizontal)
-                    }
-                    .animation(nil)
-                }
-            case .listLike:
-                LazyVGrid(columns: items, spacing: 10, pinnedViews: [.sectionHeaders]) {
-                    Section(header: stickyHeader) {
-                        ForEach(pokeCards, id: \.id) { pokeCard in
+                        case .listLike:
                             PokeCardListItemView(pokeCard: pokeCard)
                         }
-                        .padding(.horizontal)
-                    }
-                    .animation(nil)
-                }
-            }
 
+                    }
+                }
+                .animation(nil)
+            }
+            .padding(.horizontal)
+            .frame(width: UIScreen.main.bounds.width)
         }
         .animation(.default)
         .navigationTitle("PokeCardGridView")
