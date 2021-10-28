@@ -12,7 +12,7 @@ import View
 struct SwiftUINibbles_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            LayoutListView()
+            ParallaxAnimationAndStickyHeadersView()
         }
     }
 }
